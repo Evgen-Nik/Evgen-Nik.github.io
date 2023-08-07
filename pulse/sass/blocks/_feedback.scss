@@ -1,0 +1,42 @@
+.feedback {
+    padding-bottom: 71px;
+    &__wrapper {
+        margin-top: 70px;
+        hr {
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+    }
+    &-item {
+        display: flex;
+        &__round {
+            margin-right: 60px;
+            img {
+                width: 169px;
+                height: 169px;
+            }
+        }
+        &__text {
+            max-width: 700px;
+            &-name {
+                color: #0d0d0d;
+                font-size: 18px;
+                font-weight: 700;
+            }
+            &-subtitle {
+                margin-top: 10px;
+                color: #646464;
+                font-size: 14px;
+                font-weight: 300;
+            }
+            &-comment {
+                margin-top: 19px;
+                color: #0d0d0d;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 19px;
+                
+            }
+        }
+    }
+}
