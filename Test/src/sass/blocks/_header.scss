@@ -1,0 +1,52 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.header {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+    &__hamburger {
+        display: none;
+    }
+    &__logo {
+        width: 247px;
+        color: #FFF;
+        font-family: Raleway;
+        font-size: 28px;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-decoration: none;
+        span {
+            color: $main-color;
+        }
+    }
+    &__menu {
+        width: 435px;
+        display: flex;
+        justify-content: space-between;
+        &-item {
+            color: #fff;
+            text-align: right;
+            font-family: Lato;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-decoration: none;
+            &:hover {
+                color: $main-color;
+                text-decoration: none;
+            }
+            &_active {
+                color: $main-color;
+            }
+        }
+    }
+}

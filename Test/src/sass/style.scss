@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+@import 'blocks/btn';
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/order';
+@import 'blocks/footer';
+
+
+@import 'blocks/media';

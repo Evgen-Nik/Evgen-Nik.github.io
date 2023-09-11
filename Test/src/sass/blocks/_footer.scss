@@ -1,0 +1,80 @@
+.footer {
+    background: #3D4050;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    &__wrapper {
+        display: grid;
+        grid-template: minmax(20px, auto) / 310px auto 310px;
+        column-gap: 80px;
+        align-items: center;
+        grid-auto-rows: minmax(20px, auto);
+        row-gap: 15px;
+    }
+    &__rights {
+        color: #FFF;
+        font-family: 'Lato';
+        font-size: 13px;
+        font-weight: 400;
+        span {
+            text-transform: uppercase;
+        }
+    }
+    &__payment {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-between;
+        grid-auto-rows: minmax(20px, auto);
+        row-gap: 5px;
+        &-item {
+            display: grid;
+            grid-template-columns: 20px auto;
+            column-gap: 10px;
+            align-items: center;
+            color: #C3C3C3;
+            font-family: 'Lato';
+            font-size: 13px;
+            font-weight: 400;
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 18px;
+            background: #c3c3c3;
+            top: 1px;
+            left: -42px;
+        }
+        &:after {
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 18px;
+            background: #c3c3c3;
+            top: 1px;
+            right: -42px;
+        }
+    }
+    &__contacts {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-between;
+        grid-auto-rows: minmax(20px, auto);
+        row-gap: 5px;
+        &-link {
+            display: grid;
+            grid-template-columns: 20px auto;
+            column-gap: 10px;
+            align-items: center;
+            color: #FFF;
+            font-family: 'Lato';
+            font-size: 13px;
+            font-weight: 400;
+            text-decoration: none;
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+}

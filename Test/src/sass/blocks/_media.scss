@@ -1,0 +1,441 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .header {
+        &__wrapper {
+            height: 80px;
+        }
+    }
+    .promo {
+        height: 700px;
+        padding-top: 180px;
+        &__title {
+            width: 680px;
+            font-size: 40px;
+        }
+        &__subtitle {
+            margin-top: 60px;
+        }
+    }
+    .order {
+        padding: 80px 0 120px 0;
+        min-height: 850px;
+        &__scheme {
+            &-item {
+                width: 192px;
+                &:before {
+                    font-size: 16px;
+                    content: "●●●●●●●";
+                    letter-spacing: 34px;
+                }
+            }
+            &-descr {
+                width: 160px;
+            }
+        }
+        &__form {
+            grid-template-columns: repeat(3, 300px);
+        }
+    }
+    .btn {
+        &_submit {
+            width: 300px;
+        }
+    }
+    .footer {
+        &__wrapper {
+            padding: 0 10px;
+            grid-template-columns: 200px 380px 200px;
+        }
+        &__contacts {
+            grid-template-columns: repeat(auto-fit, 155px);
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .header {
+        &__menu {
+            width: 350px;
+        }
+    }
+    .promo {
+        height: 620px;
+        padding-top: 160px;
+        &__title {
+            width: 580px;
+            font-size: 34px;
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+        &__list {
+            &-item {
+                font-size: 16px;
+            }
+        }
+        &__btns {
+            margin-top: 70px;
+            width: 360px;
+        }
+    }
+    .btn {
+        width: 160px;
+        height: 40px;
+        padding: 11px 10px;
+        &_submit {
+            width: 300px;
+        }
+    }
+    .order {
+        &__title {
+            font-size: 32px;
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__scheme {
+            &-item {
+                width: 144px;
+                &:before {
+                    height: 70px;
+                    font-size: 16px;
+                    content: "●●●●●●●";
+                    letter-spacing: 26px;
+                }
+            }
+            &-icon {
+                width: 70px;
+                height: 70px;
+                img {
+                    width: 70%;
+                }
+            }
+            &-descr {
+                width: 130px;
+                font-size: 12px;
+            }
+        }
+        &__form {
+            grid-template-columns: repeat(auto-fit, 345px);
+            grid-template-rows: repeat(3, 40px);
+            grid-auto-rows: 40px;
+        }
+        &__input {
+            &-name {
+                order: 1;
+            }
+            &-email {
+                order: 2;
+            }
+            input {
+                padding-top: 8px;
+                font-size: 16px;
+            }
+        }
+        &__select {
+            order: 3;
+            select {
+                padding-top: 8px;
+                font-size: 16px;
+            }
+        }
+        &__rating {
+            order: 5;
+        }
+        &__file {
+            order: 4;
+            padding: 8px;
+            label {
+                font-size: 14px;
+            }
+        }
+    }
+    .footer {
+        height: 140px;
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: repeat(auto-fit, 400px);
+            justify-content: center;
+        }
+        &__rights {
+            text-align: center;
+            order: 3;
+        }
+        &__payment {
+            &:after{
+                display: none;
+            }
+            &:before {
+                display: none;
+            }
+        }
+        &__contacts {
+            justify-content: space-around;
+            &-link {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .header {
+        &__logo {
+            font-size: 24px;
+        }
+        &__menu {
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100vh;
+            padding: 20px 15px;
+            background-color: rgba(0,0,0, .95);
+            transition: 0.6s all;
+            &_active{
+                left: 0;
+            }  
+            &_item {
+                padding-right: 0;
+                border: none;
+                margin: 10px 0;
+            }
+            &_link {
+                font-size: 20px;
+            }
+        }
+        &__hamburger {
+		display: block;
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 27px;
+		height: 12px;
+            span {
+                display: block;
+                height: 2px;
+                width: 100%;
+                background-color: #fff;
+                margin-bottom: 3px;
+                transition: 0.5s all;
+            }
+            &_active {
+                span {
+                    margin-bottom: -2px;
+                    &:nth-child(1) {
+                        transform: translateY(3px) rotate(-45deg);
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        transform: translateY(3px) rotate(45deg);
+                    }
+                }
+            }  
+        }
+    }
+    .promo {
+        height: 520px;
+        padding-top: 150px;
+        &__title {
+            width: 450px;
+            font-size: 28px;
+        }
+        &__subtitle {
+            margin-top: 50px;
+            font-size: 14px;
+        }
+        &__list {
+            &-item {
+                font-size: 12px;
+            }
+        }
+        &__btns {
+            margin-top: 50px;
+            width: 320px;
+        }
+    }
+    .btn {
+        width: 140px;
+        height: 35px;
+        padding: 9px 10px;
+        &_submit {
+            width: 250px;
+        }
+    }
+    .order {
+        &__title {
+            font-size: 26px;
+        }
+        &__subtitle {
+            font-size: 14px;
+        }
+        &__scheme {
+            margin-top: 50px;
+            flex-direction: column;
+            width: 100%;
+            
+            &-item {
+                flex-direction: row;
+                margin-top: 10px;
+                width: 100%;
+                justify-content: center;
+                gap: 10px;
+                &:before {
+                    display: none;
+                }
+            }
+            &-icon {
+                width: 60px;
+                height: 60px;
+                img {
+                    width: 60%;
+                }
+            }
+            &-descr {
+                margin: 0;
+                width: 300px;
+                font-size: 12px;
+                text-align: start;
+            }
+        }
+        &__form {
+            grid-template-columns: repeat(auto-fit, 260px);
+            gap: 20px;
+        }
+        &__input {
+            input {
+                font-size: 14px;
+            }
+        }
+        &__select {
+            select {
+                font-size: 14px;
+            }
+        }
+        &__rating {
+            &-title {
+                font-size: 14px;
+            }
+            &-counter {
+                font-size: 14px;
+            }
+            &-slider {
+                .slider {
+                    height: 4px;
+                    border-radius: 2px;
+                    &::-webkit-slider-thumb {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    &::-moz-range-thumb {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+        &__file {
+            padding: 8px;
+            label {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .header {
+        &__logo {
+            font-size: 20px;
+        }
+        &__menu {
+            width: 80%;
+        }
+    }
+    .promo {
+        &__title {
+            width: 285px;
+            font-size: 24px;
+        }
+        &__btns {
+            width: 285px;
+        }
+    }
+    .order {
+        &__title {
+            font-size: 24px;
+        }
+        &__scheme {
+            &-descr {
+                width: 200px;
+            }
+        }
+        &__form {
+            grid-template-columns: repeat(auto-fit, 285px);
+            justify-content: center;
+        }
+        &__rating {
+            grid-column: 1;
+            grid-template-columns: auto 40px;
+            &-title {
+                font-size: 13px;
+            }
+        }
+        &__file {
+            order: 5;
+            label {
+                font-size: 12px;
+            }
+        }
+    }
+    .footer {
+        height: 200px;
+        &__wrapper {
+            padding: 0;
+            width: 100%;
+            grid-template-columns: repeat(auto-fit, 100%);
+            justify-content: center;
+        }
+        &__rights {
+            display: block;
+            margin: 0 auto;
+            width: 180px;
+            text-align: center;
+            order: 3;
+        }
+        &__payment {
+            justify-content: space-around;
+            &-item {
+                grid-template: repeat(2, 20px) / auto;
+                row-gap: 5px;
+                justify-items: center;
+                
+            }
+        }
+        &__contacts {
+            justify-content: space-around;
+            &-link {
+                justify-content: center;
+            }
+        }
+    }
+}
