@@ -1,0 +1,24 @@
+.logo {
+    width: 125px;
+    height: 33px;
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--white, #fff);
+    background: var(--white, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    &:hover {
+        // background-color: var(--blue, #6046FF);
+        background-image: linear-gradient(180deg, #46C8E4 0%, #9576EB 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border: 1px solid #46C8E4;
+    }
+}

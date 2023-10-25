@@ -1,0 +1,53 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/animate';
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/animations';
+@import 'base/dotted';
+
+* {
+    font-family: 'Krona One', 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    ul li {
+        list-style: none;
+    }
+}
+
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+@import 'common/logo';
+@import 'common/title';
+@import 'common/btn';
+@import 'common/header';
+@import 'common/footer';
+@import 'common/level';
+@import 'common/text';
+
+@import 'index/promo';
+@import 'index/align';
+@import 'index/complex';
+@import 'index/test';
+@import 'index/plans';
+@import 'index/faq';
+
+@import 'page404/page404';
+
+@import 'text/block1';
+@import 'text/quote';
+@import 'text/block2';
+
+@import 'getStarted/getStarted';
+
+@import 'base/activityClasses';
+
+@import 'common/media_common';
+@import 'index/media_index';
+@import 'page404/media_page404';
+@import 'text/media_text';
+@import 'getStarted/media_getStarted';

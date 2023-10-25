@@ -1,0 +1,118 @@
+@media (max-width: 1340px) {
+    
+}
+
+
+
+@media (max-width: 1200px) {
+    .page404 {
+        &__star1 {
+            left: 200px;
+        }
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .page404 {
+        &__descr {
+            font-size: 20px;
+        }
+        &__planet {
+            right: 56px;
+        }
+        &__man {
+            right: 335.33px;
+        }
+        &__rocket {
+            right: 162px;
+        }
+        &__star1 {
+            top: 315px;
+            left: 150px;
+        }
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .page404 {
+        &__descr {
+            width: 60%;
+        }
+        &__planet {
+            width: 432px;
+            height: 432px;
+            right: 26px;
+        }
+        &__man {
+            width: 94px;
+            height: 94px;
+            top: 215px;
+            right: 256px;
+        }
+        &__rocket {
+            width: 171px;
+            height: 171px;
+            top: 162px;
+            right: 115px;
+        }
+        &__star1 {
+            left: 70px;
+        }
+        &__star4 {
+            top: -100px;
+            left: 450px;
+        }
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .page404 {
+        min-height: 800px;
+        &__descr {
+            width: 100%;
+            font-size: 16px;
+        }
+        &__planet {
+            width: 270px;
+            height: 270px;
+            right: 20px;
+        }
+        &__earth {
+            width: 40px;
+            height: 40px;
+            left: 107px;
+        }
+        &__saturn {
+            width: 80px;
+            height: 80px;
+        }
+        &__man {
+            width: 58px;
+            height: 58px;
+            top: 243px;
+            right: 166px;
+        }
+        &__rocket {
+            width: 107px;
+            height: 107px;
+            top: 209px;
+            right: 72px;
+        }
+        &__star1 {
+            width: 25px;
+            height: 25px;
+            left: 30px;
+        }
+
+        &__star4 {
+            top: -100px;
+            left: 250px;
+        }
+    }
+}

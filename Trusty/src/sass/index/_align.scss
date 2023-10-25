@@ -1,0 +1,89 @@
+.align {
+    padding: 199px 0 203px 0;
+    // position: relative;
+    &__wrapper {
+        min-height: 357px;
+        position: relative;
+        display: grid;
+        grid-template-columns: 571px 398px;
+        column-gap: 164px;
+    }
+    &__sticky {
+        position: sticky;
+        top: 150px;
+    }
+    &__title {
+        text-align: start;
+    }
+    &__btns {
+        margin-top: 76px;
+        &-text {
+            margin-top: 24px;
+            width: 207px;
+            text-align: center;
+            color: var(--caption, #8B8B8B);
+        }
+        &_2 {
+            display: none;
+        }
+    }
+    &__scrollwindow {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        &-item {
+            display: grid;
+            grid-template: 16px minmax(36px, auto) / 24px auto;
+            row-gap: 28px;
+            column-gap: 8px;
+            align-items: center;
+            &.active {
+                .checkbox {
+                    &:before {
+                        background: url('../icons/index/checkbox_green.svg');
+                    }
+                }
+            }
+        }
+        &-title {
+            grid-column: 1/3;
+            text-align: start;
+        }
+        .checkbox {
+            position: relative; 
+            &:before {
+                position: absolute;
+                content: '';
+                background: url('../icons/index/checkbox.svg');
+                top: -10px;
+                left: 0;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        &-text {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__rectangle {
+        position: absolute;
+        z-index: -1;
+        bottom: -613px;
+        left: -354px;
+        width: 680px;
+        height: 680px;
+        background: radial-gradient(circle, rgba(178,255,187,1) 20%, rgba(255,255,255,1) 110%);
+    }
+    &__ellipse {
+        position: absolute;
+        z-index: -1;
+        bottom: -273px;
+        left: -284px;
+        background: var(--white, #fff);
+        width: 540px;
+        height: 270px;
+        border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    }
+}

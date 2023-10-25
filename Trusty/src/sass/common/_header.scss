@@ -1,0 +1,110 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: background-color 0.3s;
+    &__logo {
+        &_2 {
+            display: none;
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 198px minmax(491px, auto) 198px;
+        align-items: center;
+        padding: 17px 0;
+        justify-content: space-between;
+    }
+    &__menu, &__registration {
+        ul {
+            margin: 0 auto; 
+            padding: 0; 
+            list-style: none; 
+            display: flex;
+            justify-content: space-around;
+            li {
+                position: relative;
+                padding: 0 20px;
+            } 
+        }        
+    }
+    &__link {
+        position: relative;
+        transition: color 0.3s;
+        &:hover {
+            color: var(--white, #fff);
+            text-decoration: none;
+            span {
+                &:after {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+        }
+        span {
+            position: relative;
+            color: var(--white, #fff);
+            &:after {
+                background: none repeat scroll 0 0 transparent;
+                bottom: -2px;
+                content: "";
+                display: block;
+                height: 1px;
+                left: 50%;
+                position: absolute;
+                background: var(--white, #fff);
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
+            }
+        }
+        svg {
+            color: var(--white, #fff);
+            margin-left: 3px;
+            margin-bottom: 1px;
+            transition: color 0.3s;
+        }
+    }
+    &__hamburger {
+        display: none;
+    }
+    &.white {
+        background-color: #fff;
+
+        .logo {
+            border: 1px solid #9576EB;
+            background-image: linear-gradient(180deg, #46C8E4 0%, #9576EB 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            &:hover {
+                background: #414141;
+                border: 1px solid var(--grey, #414141);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .header__link {
+            span {
+                color: var(--grey, #414141);
+                &:hover {
+                    color: var(--grey, #414141);
+                }
+                &:after {
+                    background: var(--grey, #414141);
+                }
+            }
+            svg {
+                color: var(--grey, #414141);
+            }
+        }
+        
+        .header__hamburger {
+            span {
+                background-color: var(--grey, #414141);
+            }
+        }
+    }
+    
+}
+

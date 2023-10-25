@@ -1,0 +1,24 @@
+.text {
+    color: var(--grey, #414141);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+    letter-spacing: 0.48px;
+    &_fz12{
+        font-size: 12px;
+        letter-spacing: 0.36px;
+    }
+    &_fz14{
+        font-size: 14px;
+        letter-spacing: 0.42px;
+    }
+    &_bold16 {
+        font-weight: 700;
+    }
+    &_bold20 {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+    }
+}

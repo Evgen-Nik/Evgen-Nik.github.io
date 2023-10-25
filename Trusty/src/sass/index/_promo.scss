@@ -1,0 +1,108 @@
+.promo {
+    height: 100vh;
+    min-height: 800px;
+    background: linear-gradient(70deg, rgba(178,255,187,1) 0%, rgba(154,123,221,1) 15%, rgba(137,100,221,1) 25%, rgba(149,118,235,1) 50%, rgba(128,146,249,1) 67%, rgba(96,192,212,1) 80%, rgba(107,182,214,1) 87%, rgba(156,40,162,1) 110%);
+    padding-top: 263px;
+    padding-bottom: 127px;
+    overflow: hidden;
+    position: relative;
+    .container {
+        position: relative;
+    }
+    &__title {
+        width: 729px;
+        text-align: start;
+    }
+    &__descr {
+        margin-top: 40px;
+        max-width: 676px;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 120%; /* 24px */
+        letter-spacing: 0.6px;
+        color: var(--white, #fff);
+    }
+    &__btns {
+        margin-top: 60px;
+        display: grid;
+        grid-template: 61px 17px / 213px 243px;
+        column-gap: 54px;
+        row-gap: 8px;
+        &-text {
+            color: rgba(255, 255, 255, 0.80);
+            text-align: center;
+        }
+    }
+    &__examples {
+        position: absolute;
+        right: 0;
+        top: -99px;
+    }
+    &__wrapper {
+        position: relative;
+        .example__bg {
+            position: absolute;
+            width: 300px;
+            height: 250px;
+            opacity: 0.5;
+            background: var(--salat, #B2FFBB);
+            &_r1 {
+                top: 209px;
+                right: -52px;
+            }
+            &_r2 {
+                top: 179px;
+                right: 55px;
+            }
+            &_r3 {
+                top: 39px;
+                right: 100px;
+            }
+        }
+        .example {
+            position: absolute;
+            min-width: 274px;
+            height: 253px;
+            padding: 20px 20px 20px 20px;
+            opacity: 0.95;
+            background: var(--white, #fff);
+            box-shadow: 0px 0px 30px 0px rgba(18, 42, 125, 0.25);
+            &__data {
+                display: grid;
+                grid-template: 17px 130px / minmax(142px, auto) 75px;
+                row-gap: 16px;
+                column-gap: 8px;
+                margin-top: 24px;
+            }
+            &__name {
+                color: var(--grey, #414141);
+                font-family: 'Montserrat';
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 19px; /* 28.8px */
+                letter-spacing: 0.72px;
+            }
+            &__list {
+                margin-bottom: 0;
+                list-style-type: none;
+                display: grid;
+                grid-template-rows: repeat(6, 10px);
+                row-gap: 12px;
+            }
+            &__low {
+                top: 96px;
+                left: -448px;
+            }
+            &__medium {
+                width: 300px;
+                top: 56px;
+                left: -89px;
+            }
+            &__high {
+                top: 0;
+                left: -275px;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.level {
+    width: 142px;
+    height: 26px;
+    padding: 6px 12px;
+    border-radius: 100px;
+    border: 1px solid var(--grey, #414141);
+    background: var(--salat, #B2FFBB);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    color: var(--grey, #414141);
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+    span {
+        color: var(--grey, #414141);
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.36px;
+        text-transform: uppercase;
+    }
+    &_low {
+        background: var(--red, #FFB9AF);
+    }
+    &_medium {
+        background: var(--orange, #FFDEA7);
+    }
+}

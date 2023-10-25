@@ -1,0 +1,51 @@
+.block1 {
+    .container {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    padding-top: 179px;
+    padding-bottom: 80px;
+
+    &__title {
+        text-align: start;
+    }
+    &__descr {
+        margin-top: 40px;
+        width: 700px;
+        font-size: 20px;
+        letter-spacing: 0.6px;
+    }
+    h2 {
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    // p {
+    //     margin-bottom: 10px;
+    // }
+    &__img {
+        margin-top: 40px;
+        width: 100%;
+    }
+    &__caption {
+        margin-top: 8px;
+        margin-bottom: 0;
+        color: var(--caption, #8B8B8B);
+        text-align: center;
+    }
+    h3 {
+        margin-top: 80px;
+    }
+    ol {
+        margin-top: 24px;
+        margin-bottom: 0;
+        li {
+            margin-top: 24px;
+            margin-left: 26px;
+            p {
+                margin-top: 16px;
+                margin-bottom: 0;
+                width: 814px;
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.page404 {
+    height: 100vh;
+    min-height: 900px;
+    // background: url('../img/page404/page404-bg.jpg') center center/cover no-repeat;
+    background: linear-gradient(70deg, rgba(178,255,187,1) 0%, rgba(154,123,221,1) 15%, rgba(137,100,221,1) 25%, rgba(149,118,235,1) 50%, rgba(128,146,249,1) 67%, rgba(96,192,212,1) 80%, rgba(107,182,214,1) 87%, rgba(156,40,162,1) 110%);
+    position: relative;
+    padding-top: 200px;
+    overflow: hidden;
+    .container {
+        position: relative;
+    }
+    &__title {
+        text-align: start;
+    }
+    &__descr {
+        margin-top: 40px;
+        width: 539px;
+        color: var(--white, #FFF);
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 120%; /* 28.8px */
+        letter-spacing: 0.72px;
+    }
+    &__btns {
+        margin-top: 76px;
+    }
+    &__planet {
+        position: absolute;
+        top: 286px;
+        right: 156px;
+        width: 540px;
+        height: 540px;
+        flex-shrink: 0;
+        border-radius: 340px;
+        opacity: 0.5;
+        background: linear-gradient(162deg, #FFF -18.92%, rgba(255, 255, 255, 0.00) 62.5%);
+    }
+    &__earth {
+        position: absolute;
+        top: -87px;
+        left: 187px;
+    }
+    &__saturn {
+        position: absolute;
+        top: -7px;
+        right: 48px;
+    }
+    &__man {
+        position: absolute;
+        top: 195.6px;
+        right: 435.33px;
+    }
+    &__rocket {
+        position: absolute;
+        top: 131px;
+        right: 262px;
+    }
+    &__star1 {
+        position: absolute;
+        top: 365px;
+        left: 225px;
+    }
+    &__star2 {
+        position: absolute;
+        top: 248px;
+        right: 13px;
+    }
+    &__star3 {
+        position: absolute;
+        top: -5px;
+        right: 548px;
+    }
+    &__star4 {
+        position: absolute;
+        top: -46px;
+        left: 610px;
+    }
+
+}
+

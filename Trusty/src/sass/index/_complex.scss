@@ -1,0 +1,39 @@
+.complex {
+    background: linear-gradient(70deg, rgba(178,255,187,1) 0%, rgba(154,123,221,1) 15%, rgba(137,100,221,1) 25%, rgba(149,118,235,1) 50%, rgba(128,146,249,1) 67%, rgba(96,192,212,1) 80%, rgba(107,182,214,1) 87%, rgba(156,40,162,1) 110%);
+    padding: 112px 0;
+    position: relative;
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+    &__title {
+        margin: 0 auto;
+        width: 773px;
+    }
+    &__wrapper {
+        margin-top: 40px;
+        display: grid;
+        grid-template: minmax(251px, auto) / repeat(4, 295px);
+        gap: 20px;
+        grid-auto-rows: minmax(251px, auto);
+        justify-content: center;
+        
+    }
+    &__item {
+        padding: 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 50px;
+        background: rgba(255, 255, 255, 0.20);
+        &-title {
+            margin-top: 28px;
+        }
+        &-descr {
+            margin-top: 10px;
+            color: var(--white, #FFF);
+            text-align: center;
+        }
+    }
+}

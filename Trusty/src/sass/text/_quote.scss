@@ -1,0 +1,35 @@
+.quote {
+    .container {
+        position: relative;
+        padding-left: 172px;
+        padding-right: 172px;
+        z-index: 1;
+    }
+    padding-top: 60px;
+    padding-bottom: 60px;
+    // background: url('../img/text/text-bg.jpg') center center/cover no-repeat;
+    background: linear-gradient(70deg, rgba(178,255,187,1) 0%, rgba(154,123,221,1) 15%, rgba(137,100,221,1) 25%, rgba(149,118,235,1) 50%, rgba(128,146,249,1) 67%, rgba(96,192,212,1) 80%, rgba(107,182,214,1) 87%, rgba(156,40,162,1) 110%);
+    position: relative;
+    &__text {
+        border-radius: 50px;
+        background: rgba(255, 255, 255, 0.20);
+        padding: 28px;
+        color: var(--white-color, #FFF);
+        font-family: Krona One;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 44.8px */
+    }
+    &__name {
+        margin-top: 32px;
+        margin-left: 28px;
+        color: var(--white-color, #FFF);
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 24px */
+        letter-spacing: 0.6px;
+    }
+}

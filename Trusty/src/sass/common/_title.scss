@@ -1,0 +1,21 @@
+.title{
+    color: var(--grey, #414141);
+    text-align: center;
+    font-family: 'Krona One';
+    font-size: 32px; // h2
+    font-weight: 400;
+    line-height: 140%; /* 61.6px */
+    margin-bottom: 0;
+    &_fz44 {
+        font-size: 44px; // h1
+    }
+    &_fz16 { 
+        font-size: 16px; // h3
+        line-height: normal;
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+    }
+    &_white {
+        color: var(--white, #fff);
+    }
+}

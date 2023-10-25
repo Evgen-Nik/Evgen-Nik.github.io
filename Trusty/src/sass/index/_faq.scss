@@ -1,0 +1,79 @@
+.faq {
+    padding: 112px 0;
+}
+.faq-questions {
+    padding: 25px 210px 0 210px;
+    &__item {
+        position: relative;
+        min-height: 24px;
+        padding: 35px 0;
+        &:after {
+            position: absolute;
+            bottom: 0;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: var(--light-grey-a, #A9A9A9);
+        }
+        .question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-name {
+                color: var(--light-grey-a, #A9A9A9);
+                margin-bottom: 0;
+                transition: color 0.3s;
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                background: url('../icons/index/expand_less.svg');
+                top: 43px;
+                right: 0;
+                width: 12px;
+                height: 8px;
+            }
+        }
+        .answer {
+            max-height: 0;
+            padding-top: 0;
+            transition: all 0.3s;
+            overflow: hidden;
+            p {
+                padding: 10px 100px 0 0;
+                margin-bottom: 0;
+            }
+        }
+        &.active {
+            &:after {
+                background: var(--linear-hor, linear-gradient(90deg, #6046FF 0%, #61D8F2 100%));
+            }
+
+            .answer {
+                // hack with max-height to make height animated
+                max-height: 300px;
+                padding-top: 14px;
+            }
+
+            .question {
+                &-name {
+                    color: var(--grey, #414141);
+                }
+
+                &:after {
+                    background: url('../icons/index/expand_more.svg');
+                }
+            }
+        }
+        &:hover {
+            cursor: pointer;
+
+            .question {
+                &-name {
+                    color: var(--grey, #414141);
+                }
+            }
+        }
+    }
+}
